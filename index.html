@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Attendance Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+  <h2>Employee Attendance Dashboard</h2>
+</div>
+
+<div class="container">
+
+  <!-- Form -->
+  <div class="card">
+    <h3>Mark Attendance</h3>
+    <input type="text" id="empId" placeholder="Employee ID">
+    <input type="text" id="name" placeholder="Name">
+    <select id="status">
+      <option>Present</option>
+      <option>Absent</option>
+      <option>Leave</option>
+    </select>
+    <input type="time" id="timeIn">
+    <input type="time" id="timeOut">
+    <button onclick="submitData()">Submit</button>
+  </div>
+
+  <!-- Table -->
+  <div class="card">
+    <h3>Daily Records</h3>
+    <table id="table">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Status</th>
+          <th>Time In</th>
+          <th>Time Out</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
